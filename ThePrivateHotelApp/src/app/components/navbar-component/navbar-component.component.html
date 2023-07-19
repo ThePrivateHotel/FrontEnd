@@ -1,0 +1,31 @@
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+<div class="nav-bar" [ngClass]="collapsed? 'navbar-collapsed': ''">
+  <div class="logo-container">
+    <button class="logo" (click)="toggleCollapse()">PH</button>
+    <div class="logo-text" *ngIf="collapsed">Private Hotel</div>
+    <button class="btn-close" @rotate *ngIf="collapsed" (click)="closeSidenav()">
+      <i class="fal fa-times close-icon"></i>
+    </button>
+
+  </div>
+    <ul class="sidenav-nav">
+        <li class="sidenav-nav-item"><a href="/home" routerLink="/home" class="sidenav-nav-link" routerLinkActive="active"
+        [routerLinkActiveOptions]="{exact: true}"><span id="sidenav-link-icon" class="material-symbols-outlined" >home</span><span class="sidenav-link-text" *ngIf="collapsed">Home</span></a></li>
+    
+        <li class="sidenav-nav-item"><a href="/hotel" routerLink="/hotel" class="sidenav-nav-link" routerLinkActive="active"
+        [routerLinkActiveOptions]="{exact: true}"><span id="sidenav-link-icon" class="material-symbols-outlined" >hotel</span><span class="sidenav-link-text" *ngIf="collapsed">Hotel</span></a></li>
+    
+        <li class="sidenav-nav-item"><a href="/tourism" routerLink="/tourism" class="sidenav-nav-link" routerLinkActive="active"
+        [routerLinkActiveOptions]="{exact: true}"><span id="sidenav-link-icon" class="material-symbols-outlined" >public</span><span class="sidenav-link-text" *ngIf="collapsed">Tourism</span></a></li>
+    
+        <li class="sidenav-nav-item"><a href="/villa" routerLink="/villa" class="sidenav-nav-link" routerLinkActive="active"
+        [routerLinkActiveOptions]="{exact: true}"><span id="sidenav-link-icon" class="material-symbols-outlined" >villa</span><span class="sidenav-link-text" *ngIf="collapsed">Villa</span></a></li>
+    
+        <li class="sidenav-nav-item"><a href="/restaurant" routerLink="/restaurant" class="sidenav-nav-link" routerLinkActive="active"
+        [routerLinkActiveOptions]="{exact: true}"><span id="sidenav-link-icon" class="material-symbols-outlined" >restaurant</span><span class="sidenav-link-text" *ngIf="collapsed">Restaurant</span></a></li>
+    </ul>
+
+
+</div>
+
+

@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800,900');
+
+*{
+    margin: 0;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    position: relative;
+    
+}
+
+.nav-link{
+    display: inline-flex;
+    text-decoration: none;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 2.5rem;
+    align-items: center;
+    width: 80%;
+    color: #ffeba7;
+    padding: 1rem 1rem;
+    transition: all .5s ease;
+    
+}
+
+.nav-link:hover{
+    background-color: #ffe9a3db;
+    color: #3d1d0d;
+    border-radius: 2px;
+    
+}
+
+.nav-bar{
+  background-color: #3d1d0d;;
+  height: 100vh;
+  padding-left: 0px;
+  z-index: 1;
+  top: 0;
+  width: 5rem;
+  text-align: center;
+  position: fixed;
+  align-items: center;
+  
+  .logo-container{
+    display: flex;
+    align-items: center;
+    padding: 0.938rem 0.938rem 0.938rem 0.938rem;
+    width: 100%;
+
+        .logo{
+        background-color: #ffeba7;
+        text-align: center;
+        width: 4rem;
+        font-size: 24px;
+        min-width: 3rem;
+        border-radius: 0.313rem;
+        padding: 0.313rem;
+        font-weight: 800;
+        cursor: pointer;
+        border: none;
+        color: #3d1d0d;
+
+        }
+
+        .logo-text{
+            margin-left: 1rem;
+            font-size: 24px;
+            font-weight: 600;
+            color: #ffeba7;
+        }
+
+        .btn-close{
+            margin-left: 1rem;
+            background-color: transparent;
+            border: none;
+            font-size: 24px;
+            width: 1rem;
+            height: 2rem;
+            color: #ffeba7;
+            cursor: pointer;
+
+        }
+  }
+  
+}
+
+.sidenav-nav {
+    list-style: none;
+    padding: 0.938rem;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: calc(100% - 3.65rem);
+    cursor: pointer;
+
+    .sidenav-nav-item {
+        width: 100%;
+        margin-bottom: 2.625rem;
+
+        .sidenav-nav-link {
+            display: flex;
+            align-items: center;
+            height: 3rem;
+            color:  #ffeba7;
+            text-decoration: none;
+            border-radius: 0.625rem;
+            transition: all .3s ease;
+
+            #sidenav-link-icon {
+                font-size: 30px;
+                width: 2rem;
+                min-width: 2rem;
+                margin: 0 0.5rem;
+                text-align: center;
+            }
+
+            .sidenav-link-text {
+                margin-left: 1.5rem;
+            }
+        }
+    }
+
+    .sidenav-nav-item:hover {
+        .sidenav-nav-link {
+            background-color:  #ffeba7;
+            color: #3d1d0d;
+        }
+    }
+}
+
+.navbar-collapsed{
+    width: 18.236rem;
+}
+
+.active {
+    background-color: #ffeba7;
+    #sidenav-link-icon,
+    .sidenav-link-text {
+        color: #3d1d0d;
+    }
+
+}
